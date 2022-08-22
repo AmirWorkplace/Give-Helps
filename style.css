@@ -1,0 +1,33 @@
+header{
+    background-color: rgb(12, 12, 12);
+    height: 945px;
+}
+
+.header{
+  padding-top: 250px;
+    color:  white;
+}
+
+.h1Tag{
+    font-size: 120px;
+    color: tomato;
+    padding-bottom: 20px;
+    font-family: initial;
+}
+
+.player-card{
+    margin-top: 100px;
+    background-color: rgb(51, 50, 50);
+}
+
+.player-card h5{
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+.selectd-items li{
+  font-size: 30px;
+}
+.small{
+    width: 100px;
+    border-radius: 5px;
+}

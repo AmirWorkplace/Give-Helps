@@ -1,0 +1,64 @@
+
+/* document.getElementById('calculate-btn').addEventListener('click', function(){
+    const perPlayerField = document.getElementById('per-player-field');
+    const perPlayerToString = perPlayerField.value;
+    const perplayer = parseInt(+perPlayerToString);
+  
+    const parPlayerCalculet = perplayer * playerName;
+    console.log(parPlayerCalculet);
+  
+}) */
+
+/* const addName = document.querySelector("#add-name-list");
+addName.onkeyup = function () {
+  const countsPlayers = addName.childElementCount;
+  console.log(countsPlayers);
+};
+
+const players = document.querySelectorAll(".allplayers");
+
+ */
+// console.log(countsPlayers);
+
+/* countsPlayers.addEventListener("keyup", function () {
+  // const countsPlayers = addName.childElementCount;
+  console.log(countsPlayers);
+}); */
+
+// const players = document.querySelectorAll("#player");
+/* console.log(players);
+
+const allPlayerList = document.querySelector(".allPlayerList");
+allPlayerList.addEventListener('keyup', function(){
+  const allPlayerList = document.querySelectorAll(".allPlayerList li");
+console.log(allPlayerList);
+})
+ */
+
+
+/* 
+const playerValue = document.querySelector(".playerValue");
+const star = (playerValue.onclick = function(){
+  const allPlayerList = document.querySelectorAll(".allPlayerList li");
+  let allPlayerLength = allPlayerList.length;
+  console.log(allPlayerList);
+  return allPlayerLength;
+});
+
+star(); */
+/* playerValue.addEventListener('click', function(){
+  const allPlayer = document.querySelectorAll(".allPlayerList li");
+  let avgPlayer = allPlayer.length;
+
+  let x = 0;
+  countInp.addEventListener('keyup', function(){
+    let playerMoney = countInp.value;
+    let Average = avgPlayer * playerMoney;
+    x = playerMoney;
+    console.log(Average);
+    return x;
+  })
+  console.log(allPlayer);
+      console.log(allPlayer);
+})
+ */
