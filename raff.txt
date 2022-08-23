@@ -62,3 +62,103 @@ star(); */
       console.log(allPlayer);
 })
  */
+
+
+/* getCoachValue.addEventListener("keyup", function () {
+  // coachActive.addEventListener("click", function () {
+  let getAavgValueInp = +getCoachValue.value;
+  console.log(getAavgValueInp);
+    sp1.innerHTML = getAavgValueInp;
+  // });
+});
+ */
+
+/* 
+getManagerValue.addEventListener("keyup", function () {
+  // coachActive.addEventListener("keyup", function () {
+    let getgetManagerValue = +getManagerValue.value;
+    console.log(getgetManagerValue);
+    sp2.innerHTML = getManagerValue;
+  // });
+}); */
+
+/* 
+getCoachValue.addEventListener("click", function () {
+  getManagerValue.addEventListener("click", function () {
+    let getManagerValueInp = +getManagerValue.value;
+    console.log(getManagerValueInp);
+  });  
+});
+//  news();
+ */
+/* 
+getCoachValue.onkeyup = () => {
+  sp1.innerHTML = +getCoachValue.value;
+};
+getManagerValue.onkeyup = () =>{
+  sp2.innerHTML = +getManagerValue.value;
+}
+
+const sp = document.querySelectorAll('.sp');
+console.log(sp);
+
+// sp.forEach((getsp) => {
+  coachActive.addEventListener("click", () => {
+    let x = (+sp[0].innerText);
+    let y = (+sp[1].innerText);
+    let z = (+sp[2].innerText);
+
+    let sum = x+y+z;
+    console.log(sum);
+    // let x('new');
+    // for (var i = 0; i < sp.length; i++) {
+    //   console.log(+sp[i].innerText);
+    //   let allValues = (+sp[i].innerText);
+
+    // }
+  }); */
+// });
+// console.log(avgValue);
+// avgValue.onkeyup = () => {
+//   console.log(avgValue.innerHTML);
+// };
+// console.log(sp3.innerHTML);
+    // sp.forEach((getsp) => {
+
+      // let x('new');
+      // for (var i = 0; i < sp.length; i++) {
+      //   console.log(+sp[i].innerText);
+      //   let allValues = (+sp[i].innerText);
+
+      // }
+
+    //   sp3.innerHTML = Average;
+    // arr.push(Average);
+
+    // getCoachValue.addEventListener("keyup", function () {
+    //   let coachV = getCoachValue.value;
+    //   console.log(coachV);
+
+    // allPlayersVAlue.addEventListener("keyup", function () {
+    // allPlayersVAlue.innerHTML = Average;
+
+    // console.log(+allPlayersVAlue.innerText);
+    // });
+    // });
+    // console.log(`The All value of Your Selected Players are : $${Average} !`);
+  // console.log(playerMoney);
+
+// avgValue.addEventListener('click', function(){
+//   let getAavgValue = +avgValue.innerHTML;
+//   console.log(getAavgValue);
+// })
+// console.log(+avgValue.innerHTML);
+// }
+// Amir();
+
+/* function news(nam){
+  let arr = [];
+  return arr.push(nam);
+}
+ */
+// console.log(arr);

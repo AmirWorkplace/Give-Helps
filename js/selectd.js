@@ -41,36 +41,65 @@ document.getElementById("dimaria-btn").addEventListener("click", function () {
 
 // ==========per player Calculate==========
 
-document.getElementById("calculate-btn").addEventListener("click", function () {
-  const perPlayerField = document.getElementById("per-player-field");
-  const perPlayerToString = perPlayerField.value;
-  const perplayer = parseInt(perPlayerToString);
+// document.getElementById("calculate-btn").addEventListener("click", function () {
+//   const perPlayerField = document.getElementById("per-player-field");
+//   const perPlayerToString = perPlayerField.value;
+//   const perplayer = parseInt(perPlayerToString);
 
-  const parPlayerCalculet = perplayer * playerName;
-  console.log(parPlayerCalculet);
-});
+//   const parPlayerCalculet = perplayer * playerName;
+//   console.log(parPlayerCalculet);
+// });
 
 // ========== All player Calculation ! e==========
 
-function Amir() {
+// function Amir() {
+const sp3 = document.querySelector(".sp2");
 
-  const playerValue = document.querySelector(".playerValue");
-  const avgValue = document.querySelector(".avgValue");
-  const countInp = document.querySelector(".countInp");
+const getCoachValue = document.querySelector(".getCoachValue");
+const coachActive = document.querySelector(".coachActive");
+const AllValue = document.querySelector(".AllValue");
+const allPlayersVAlue = document.querySelector(".allPlayersVAlue");
+const getManagerValue = document.querySelector("#getManagerValue");
 
-  countInp.addEventListener("keyup", function () {
-    let playerMoney = countInp.value;
+const playerValue = document.querySelector(".playerValue");
+const avgValue = document.querySelector(".avgValue");
+const countInp = document.querySelector(".countInp");
+let arr = [];
+countInp.addEventListener("keyup", function () {
+  let playerMoney = countInp.value;
 
-    playerValue.addEventListener("click", function () {
-      const allPlayer = document.querySelectorAll(".allPlayerList li");
-      let avgPlayer = allPlayer.length;
-      let Average = avgPlayer * playerMoney;
+  playerValue.addEventListener("click", function () {
+    const allPlayer = document.querySelectorAll(".allPlayerList li");
+    let avgPlayer = allPlayer.length;
+    let Average = avgPlayer * playerMoney;
 
-      avgValue.innerHTML = Average;
-      // console.log(`The All value of Your Selected Players are : $${Average} !`);
+    avgValue.innerHTML = Average;
+    console.log(Average);
+
+    getCoachValue.onkeyup = () => {
+      sp1.innerHTML = +getCoachValue.value;
+    };
+    getManagerValue.onkeyup = () => {
+      sp2.innerHTML = +getManagerValue.value;
+    };
+
+    const sp = document.querySelectorAll(".sp");
+    console.log(sp);
+
+    coachActive.addEventListener("click", () => {
+      let x = +Average;
+      let y = +sp[0].innerText;
+      let z = +sp[1].innerText;
+
+      let sum = Average + y + z;
+      console.log(sum);
+      AllValue.innerHTML = sum;
+
     });
-
-    // console.log(playerMoney);
   });
-};
-Amir();
+
+});
+
+const sp1 = document.querySelector(".sp1");
+const sp2 = document.querySelector(".sp2");
+
