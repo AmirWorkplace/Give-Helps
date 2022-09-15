@@ -53,6 +53,9 @@ document.getElementById("dimaria-btn").addEventListener("click", function () {
 // ========== All player Calculation ! e==========
 
 // function Amir() {
+
+const sp1 = document.querySelector(".sp1");
+const sp2 = document.querySelector(".sp2");
 const sp3 = document.querySelector(".sp2");
 
 const getCoachValue = document.querySelector(".getCoachValue");
@@ -60,7 +63,6 @@ const coachActive = document.querySelector(".coachActive");
 const AllValue = document.querySelector(".AllValue");
 const allPlayersVAlue = document.querySelector(".allPlayersVAlue");
 const getManagerValue = document.querySelector("#getManagerValue");
-
 const playerValue = document.querySelector(".playerValue");
 const avgValue = document.querySelector(".avgValue");
 const countInp = document.querySelector(".countInp");
@@ -87,7 +89,6 @@ countInp.addEventListener("keyup", function () {
     console.log(sp);
 
     coachActive.addEventListener("click", () => {
-      let x = +Average;
       let y = +sp[0].innerText;
       let z = +sp[1].innerText;
 
@@ -99,7 +100,3 @@ countInp.addEventListener("keyup", function () {
   });
 
 });
-
-const sp1 = document.querySelector(".sp1");
-const sp2 = document.querySelector(".sp2");
-
