@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div>
+      <ul class="all-links" id="all-links"></ul>
+    </div>
+
+    <script>
+      let linkArray = []
+      $(document).ready(function () {
+        $.ajax({
+          url: "https://openapi.programming-hero.com/api/news/categories",
+          method: "GET",
+          dataType: "json",
+          success: function (res) {
+            for (var i = 0; i < res.data.news_category.length; i++) {
+              linkArray.push(
+                `https://openapi.programming-hero.com/api/news/category/${res.data.news_category[i].category_id}`
+              )
+              document.write(`
+                  <li>
+                    <a href="display.html?https://openapi.programming-hero.com/api/news/category/${res.data.news_category[i].category_id}">
+                      ${res.data.news_category[i].category_name}  
+                    </a>
+                  </li>
+                `)
+            }
+          },
+        })
+      })
+      console.log(linkArray)
+    </script>
+  </body>
+</html>

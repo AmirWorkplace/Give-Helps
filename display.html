@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="pushData"></div>
+    <script>
+      let curPageUrl = window.location.href
+      let apiUrl = curPageUrl.split("?")
+
+      $(document).ready(function () {
+        $.ajax({
+          url: apiUrl[1],
+          method: "GET",
+          dataType: "json",
+          success: function (res) {
+            for (var i = 0; i < res.data.length; i++) {
+              let allData = `<ul>
+                  <li>${res.data[i].category_id}</li>
+                  <li>${res.data[i].author.name}</li>
+                  <li>${res.data[i].author.published_date}</li>
+                  <li><img src="${res.data[i].author.img}" width="100px" height="100px"></li>
+                  <li>${res.data[i].details}</li>
+                  <li><img src="${res.data[i].image_url}" width="100px" height="100px"></li>
+                  <li>${res.data[i].others_info.is_todays_pick}</li>
+                  <li>${res.data[i].others_info.is_trending}</li>
+                  <li>${res.data[i].rating.number}</li>
+                  <li>${res.data[i].rating.badge}</li>
+                  <li>${res.data[i].thumbnail_url}</li>
+                  <li>${res.data[i].title}</li>
+                  <li>${res.data[i].total_view}</li>
+                  <li>${res.data[i]._id}</li>
+              </ul>`
+              document.write(allData)
+            }
+          },
+        })
+      })
+
+      $("#pushData").html(a.join("sf"))
+      console.log(a.length)
+    </script>
+  </body>
+</html>
